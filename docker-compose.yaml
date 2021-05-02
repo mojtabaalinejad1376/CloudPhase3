@@ -9,3 +9,7 @@ services:
     image: sajadkh/doctor_system_doctor_panel
     ports: 
       - '127.0.0.1:8001:8001'
+  patient:
+    image: sajadkh/doctor_system_patient_panel
+    ports: 
+      - '127.0.0.1:8002:8002'
