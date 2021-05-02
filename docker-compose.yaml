@@ -5,3 +5,7 @@ services:
     image: sajadkh/doctor_system_authentication
     ports: 
       - '127.0.0.1:8000:8000'
+  doctor:
+    image: sajadkh/doctor_system_doctor_panel
+    ports: 
+      - '127.0.0.1:8001:8001'
