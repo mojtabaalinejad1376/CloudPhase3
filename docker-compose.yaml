@@ -5,6 +5,8 @@ services:
     image: sajadkh/doctor_system_authentication
     ports: 
       - '8000:8000'
+    deploy:
+      replicas: 2
   doctor:
     image: sajadkh/doctor_system_doctor_panel
     ports: 
