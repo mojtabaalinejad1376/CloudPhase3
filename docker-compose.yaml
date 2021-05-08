@@ -2,19 +2,19 @@ version: "3.8"
 
 services: 
   authentication:
-    image: 127.0.0.1:5000/authentication
+    image: sajadkh/doctor_system_authentication
     build: .
     ports: 
       - '8000:8000'
     deploy:
       replicas: 2
   doctor:
-    image: 127.0.0.1:5000/doctor
+    image: sajadkh/doctor_system_doctor_panel
     build: .
     ports: 
       - '8001:8001'
   patient:
-    image: 127.0.0.1:5000/patient
+    image: sajadkh/doctor_system_patient_panel
     build: .
     ports: 
       - '8002:8002'
